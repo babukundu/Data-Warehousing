@@ -1,0 +1,145 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b5f1978e-f3e9-4d3f-ad91-c7f806a9d561" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Date</ID>
+  <Name>Dim Date</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_DimDate</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="e4098193-3c80-4a2c-901b-c8497bfc0629">
+    <DataSourceViewID>Crimein Atlantaproject1</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="65760be5-96ea-47de-b402-efceb3052f51">
+      <ID>Dateid</ID>
+      <Name>Dateid</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c67f6b97-5bea-49b3-aa83-f2fee8f22222">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="85da1e28-8e4c-4ce4-86f8-453f2aa2dfde">
+            <TableID>dbo_DimDate</TableID>
+            <ColumnID>dateid</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="TableMiningStructureColumn" dwd:design-time-name="296e21b0-6bf5-4536-a0f0-3cb6cb15abd8">
+      <Annotations>
+        <Annotation>
+          <Name>MDXFilterComponent</Name>
+          <Value></Value>
+        </Annotation>
+      </Annotations>
+      <ID>Fact Crime</ID>
+      <Name>Fact Crime</Name>
+      <ForeignKeyColumns>
+        <ForeignKeyColumn dwd:design-time-name="5e834214-edf5-4dd5-aa22-6c99bcec4c13">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <NullProcessing>Error</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4d76f8ff-f128-4847-8655-72508e0f3914">
+            <TableID>dbo_FactCrime</TableID>
+            <ColumnID>dateid</ColumnID>
+          </Source>
+        </ForeignKeyColumn>
+      </ForeignKeyColumns>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="18cbc3d5-17d1-457d-a25f-8229c9d0bdc9">
+          <ID>Crimeid X</ID>
+          <Name>Crimeid X</Name>
+          <IsKey>true</IsKey>
+          <Type>Long</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn dwd:design-time-name="3336bde2-1a09-411a-ad15-0f812c1d1001">
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding" dwd:design-time-name="92c8e122-e48f-4903-91a0-91a9a9834d38">
+                <TableID>dbo_FactCrime</TableID>
+                <ColumnID>crimeid_x</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="613b0629-ad25-41c8-90df-5b08cb5c90ac">
+      <ID>Dim Date</ID>
+      <Name>Dim Date</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Association_Rules</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="bf0237a3-37de-475f-a319-b1e975a66d56">
+          <ID>Dateid</ID>
+          <Name>Dateid</Name>
+          <SourceColumnID>Dateid</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="b58af777-137b-42a2-9853-ea9a64eab03c">
+          <ID>Fact Crime</ID>
+          <Name>Fact Crime</Name>
+          <SourceColumnID>Fact Crime</SourceColumnID>
+          <Usage>Predict</Usage>
+          <Columns>
+            <Column dwd:design-time-name="08ca0e26-903e-45a9-a9e4-99781ddb2082">
+              <ID>Crimeid X</ID>
+              <Name>Crimeid X</Name>
+              <SourceColumnID>Crimeid X</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+          </Columns>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>

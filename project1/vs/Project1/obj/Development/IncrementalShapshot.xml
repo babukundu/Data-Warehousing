@@ -1,0 +1,103 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Project1</Database>
+    <Server>LAP-RONJONBABU\CSSE_DWL_2023</Server>
+    <ConnectionString>Data Source=LAP-RONJONBABU\CSSE_DWL_2023;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>BngM0LFUdlpLvctXEnfEs9c8wTg=4/22/2023 12:05:14 PM4/22/2023 11:57:41 AM</TimeStamp>
+        <ID>
+          <String>Crimein Atlantaproject1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>h+9u1CuD3iQjxIdHvO8qFBdTAdA=4/22/2023 11:58:15 AM4/22/2023 11:58:13 AM</TimeStamp>
+        <ID>
+          <String>Crimein Atlantaproject1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>LGsATeXR+Zmtl4IDe33m6p/aoIg=4/22/2023 12:35:43 PM4/22/2023 12:01:28 PM</TimeStamp>
+        <ID>
+          <String>Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>0SI+KPJ8rGHkeoWCLZk3jT8YQ7k=4/23/2023 8:11:01 PM4/22/2023 12:01:28 PM</TimeStamp>
+        <ID>
+          <String>crime</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>r0lor3XXDcmNMK9IhGX+qsAfKhg=4/23/2023 8:12:11 PM4/22/2023 12:01:28 PM</TimeStamp>
+        <ID>
+          <String>Location</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+GK0xMPj70dAaot2H4ip293JBSg=4/23/2023 8:10:33 PM4/22/2023 12:01:28 PM</TimeStamp>
+        <ID>
+          <String>BEAT</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>moBCAbX+CY23n3ESldpOtJnU9ss=4/23/2023 8:09:31 PM4/22/2023 12:01:28 PM</TimeStamp>
+        <ID>
+          <String>ZONE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>O7Th5iB/xx/3fqOdNPdqjYPkKy0=4/23/2023 11:31:45 AM4/22/2023 12:01:28 PMsgpngR0knHlJKc0SpulLKCIf5d0=4/22/2023 12:01:28 PM4/22/2023 12:01:28 PM</TimeStamp>
+        <ID>
+          <String>Crimein Atlantaproject1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>liSqNWaG13rVEGpXZHJCA65Tz7w=4/23/2023 8:00:28 PM4/23/2023 8:00:28 PM</TimeStamp>
+        <ID>
+          <String>Dim Location</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>C5yQZvcdaJ4y5C1iMWAdiuSj3Qs=4/23/2023 8:05:39 PM4/23/2023 8:05:39 PM</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>X5mu2/XWTkpUyiuM65ItJTU9IYg=4/22/2023 11:50:02 AM4/22/2023 11:50:01 AM</TimeStamp>
+      <ID>
+        <String>Project1</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2023-04-23T12:29:59.693333Z</LastDeployed>
+</DeploymentSnapshot>
